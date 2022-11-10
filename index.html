@@ -11,84 +11,158 @@
     <link rel="Icon" href="favicon_io/favicon.ico">
 </head>
 <body>
-    <img id="wallpaper" src="Wallpaper Galaxy.jpg" alt="Galaxy Wallpaper" width="300" height="500">
-    <p><a href="Wallpaper Galaxy.jpg" download>Download the image above</a></p>
-    <p><a href="tel:85985339934">Call me</a></p>
-    <h1>This is my header</h1>
+    <header>
+        <h1>My favorite songs by singer:</h1>
+            <nav>
+        
+                    <a href="#Alanis">Alanis Morrisset</a>
+                    <a href="#Ana">Ana Carolina</a>
+                    <a href="#Pitty">Pitty</a>
+                    <a href="#Katy">Katy</a>
+                    <a href="#Queen">Queen</a>
+        
+            </nav>
+            <hr id="hrprincipal">
+    </header>
 
-    <hr>
+    <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+            <legend>Informações pessoais</legend>
+            <p>
+                <label for="firstName">Primeiro Nome:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Digite seu primeiro nome" autocomplete="on"  autofocus>
+            </p>
+            <p>
+                <label for="lastName">Sobre Nome:</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Digite seu sobrenome" autocomplete="on" >
+            </p>
+            <p>
+                <label for="password">Senha:</label>
+                <input type="password" name="password" id="password" placeholder="Crie uma senha" >
+            </p>
+            <p>
+                <label for="phoneNumber">Telefone</label>
+                <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="(00) 0 0000-0000" pattern="(0-9){11}" required>
+            </p>
+            <p>
+                <label for="decade">Década favorita</label>
+                <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1990">
+            </p>
+            <p>
+                <label for="coffee">Favorite Coffee:</label>
+                <select name="coffee" id="coffee" multiple size="6">
+                    <optgroup label="Commum">
+                        <option value="regular">Regular Coffee</option>
+                        <option value="cortado">Cortado</option>
+                        <option value="americano">Americano</option>
+                    </optgroup>
+                    <optgroup label="Especial">
+                        <option value="iced">Iced Coffee</option>
+                        <option value="latte">Latte</option>
+                        <option value="cappuccino">Cappuccino</option>
+                    </optgroup>
+                    <option value="others">Outros</option>
+                </select>
+            </p>
+            <label for="coffee">Café favorito</label>
+            <input type="text" name="coffee" id="coffee" list="coffee-list">
+            <datalist id="coffee-list">
+                <option value="dark">
+                <option value="littleMilk">
+                <option value="withMilk">
+                <option value="espresso">
+                <option value="others">
+            </datalist>
 
-    <h2>Musics that I remember:</h2>
-    <h3>Índice:</h3>
-        <nav>
+            <input type="submit" value="">
+            <button type="submit">Enviar</button>
+        </fieldset>
+
+    </form>
+
+
+    <main>
+        <dl>
+            <article id="Alanis">
+                <dt><h3>Alanis Morrisset</h3></dt>
+                <img src="img/Alanis.jpg" alt="Alanis Morisset" width="400" height="300">
+                <dd><a href="https://www.letras.mus.br/alanis-morissette/159/" target="_blank">Precious Illusion</a></dd>
+                <dd><a href="https://www.letras.mus.br/alanis-morissette/129/" target="_blank">Thank U</a></dd>
+                <dd><a href="https://www.letras.mus.br/alanis-morissette/132/" target="_blank">That I would be good</a></dd>
+                <dd>You ought know</dd>
+                <dd>Perfect</dd>
+                <br>
+            </article>
+            <article id="Ana">
+                <dt><h3>Ana Carolina</h3></dt>
+                <img src="img/ana-carolina.jpg" alt="Ana Carolina" width="400" height="300">
+                <dd>Rosas</dd>
+                <dd>Elevador</dd>
+                <dd>Encostar na tua</dd>
+                <dd>Confesso</dd>
+                <dd>Quem de nós dois</dd>
+                <br>
+            </article>
+            <article id="Pitty">
+                <dt><h3>Pitty</h3></dt>
+                <img src="img/Pitty.jpg" alt="Pitty" width="400" height="300">
+                <dd>Me adora</dd>
+                <dd>Estante</dd>
+                <dd>Teto de vidro</dd>
+                <dd>Equalize</dd>
+                <dd>Deja Vu</dd>
+            </article>
+            <article id="Katy">
+                <dt><h3>Katy Perry</h3></dt>
+                <img src="img/Katy_perry.jpg" alt="Katy Perry" width="400" height="300">
+                <dd>Hot n cold</dd>
+                <dd>Black Horse</dd>
+                <dd>Roar</dd>
+                <dd>Firework</dd>
+                <dd>I kissed a girl</dd>
+            </article>
+            <article id="Queen">
+                <dt><h3>Queen</h3></dt>
+                <img src="img/Queen.jpg" alt="Queen" width="400" height="300">
+                <dd>The show must go on</dd>
+                <dd>We will rock you</dd>
+                <dd>Who wants to live forever</dd>
+                <dd>Bohemian Rhapsody</dd>
+                <dd>I want to break free</dd>
+            </article>
+        </dl>
+    </main>
+    <aside>
+        <details>
+            <summary>This is the first question</summary>
+            <p>This is the first hidden text</p>
             
-                <a href="#Alanis">Alanis Morrisset</a>
-                <a href="#Ana">Ana Carolina</a>
-                <a href="#Pitty">Pitty</a>
-                <a href="#Katy">Katy</a>    
-                <a href="#Queen">Queen</a>
-            
-        </nav>
-
-
-    <dl>
-        <section id="Alanis">
-            <dt>Alanis Morrisset</dt>
-            <br>
-            <dd><a href="https://www.letras.mus.br/alanis-morissette/159/" target="_blank">Precious Illusion</a></dd>
-            <dd><a href="https://www.letras.mus.br/alanis-morissette/129/" target="_blank">Thank U</a></dd>
-            <dd><a href="https://www.letras.mus.br/alanis-morissette/132/" target="_blank">That I would be good</a></dd>
-            <dd>You ought know</dd>
-            <dd>Perfect</dd>
-            <br>
-        </section>
-
-        <section id="Ana">
-            <dt>Ana Carolina</dt>
-            <br>
-            <dd>Rosas</dd>
-            <dd>Elevador</dd>
-            <dd>Encostar na tua</dd>
-            <dd>Confesso</dd>
-            <dd>Quem de nós dois</dd>
-            <br>
-        </section>
-
-        <section id="Pitty">
-            <dt>Pitty</dt>
-            <br>
-            <dd>Me adora</dd>
-            <dd>Estante</dd>
-            <dd>Teto de vidro</dd>
-            <dd>Equalize</dd>
-            <dd>Deja Vu</dd>
-        </section>
-
-        <section id="Katy">
-            <dt>Katy Perry</dt>
-            <br>
-            <dd>Hot n cold</dd>
-            <dd>Black Horse</dd>
-            <dd>Roar</dd>
-            <dd>Firework</dd>
-            <dd>I kissed a girl</dd>
-        </section>
-
-        <section id="Queen">
-            <dt>Queen</dt>
-            <br>
-            <dd>The show must go on</dd>
-            <dd>We will rock you</dd>
-            <dd>Who wants to live forever</dd>
-            <dd>Bohemian Rhapsody</dd>
-            <dd>I want to break free</dd>
-        </section>
-
-
-    </dl>
+        </details>
+        <details>
+            <summary>This is the second question</summary>
+                <p>This is the second hidden text</p>
+        </details>
+    </aside>
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Activity</th>
+        </tr>
+        <tr>
+            <td><time datetime="09:30">09:30</time></td>
+            <td>Wake-up</td>
+        </tr>
+        <tr>
+            <td><time datetime="10:00">10:00</time></td>
+            <td>Breakfast</td>
+        </tr>
+    </table>
     <br>
     <br>
-    <a href="about.html">About Me</a> 
+    <footer>
+        <p><a href="/">Voltar ao início</a></p>
+        <p><a href="about.html">About Me</a></p>
+    </footer> 
 
 </body>
 </html>
